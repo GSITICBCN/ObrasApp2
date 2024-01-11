@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Costos">
+
+  <ImageView
+      android:id="@+id/menu9"
+      android:layout_width="wrap_content"
+      android:layout_height="48dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="10dp"
+      android:contentDescription="@string/menu"
+      android:onClick="toMenu"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/menu_48px" />
+
+  <ImageView
+      android:id="@+id/logo1"
+      android:layout_width="90dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="10dp"
+      android:contentDescription="@string/txt_logo"
+      android:onClick="toMain"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@mipmap/logo"
+      tools:ignore="UsingOnClickInXml" />
+
+  <Button
+      android:id="@+id/btn_inicio"
+      android:layout_width="300dp"
+      android:layout_height="60dp"
+      android:layout_marginBottom="30dp"
+      android:backgroundTint="#FF00FF"
+      android:onClick="toMain"
+      android:text="@string/volverInicio"
+      android:textAllCaps="false"
+      android:textSize="20sp"
+      app:cornerRadius="30dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+      android:id="@+id/titulo_costos"
+      android:layout_width="340dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="70dp"
+      android:fontFamily="sans-serif"
+      android:text="@string/costos_de_construcci_n"
+      android:textAlignment="center"
+      android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+      android:textColor="#FF00FF"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TableLayout
+      android:id="@+id/textos_costos"
+      android:layout_width="340dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/titulo_costos">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+      <TextView
+          android:id="@+id/texto_costos1"
+          android:layout_width="212dp"
+          android:layout_height="wrap_content"
+          android:text="@string/obras" />
+
+      <TextView
+          android:id="@+id/ref_monto_obras"
+          android:layout_width="118dp"
+          android:layout_height="wrap_content"
+          android:textAlignment="textEnd" />
+
+      <TextView
+          android:id="@+id/euro_simbolo"
+          android:layout_width="11sp"
+          android:layout_height="wrap_content"
+          android:text="@string/simb_euro6"
+          android:textAlignment="textEnd" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+      <TextView
+          android:id="@+id/texto_costos2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/arquitecto" />
+
+      <TextView
+          android:id="@+id/ref_monto_arq"
+          android:layout_width="118dp"
+          android:layout_height="wrap_content"
+          android:textAlignment="textEnd" />
+
+      <TextView
+          android:id="@+id/euro_simbolo2"
+          android:layout_width="11sp"
+          android:layout_height="wrap_content"
+          android:text="@string/simb_euro7"
+          android:textAlignment="textEnd" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+      <TextView
+          android:id="@+id/texto_costos3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/ingeniero_de_la_edificaci_n" />
+
+      <TextView
+          android:id="@+id/monto_ingeniero"
+          android:layout_width="118dp"
+          android:layout_height="wrap_content"
+          android:textAlignment="textEnd" />
+
+      <TextView
+          android:id="@+id/euro_simbolo3"
+          android:layout_width="11sp"
+          android:layout_height="wrap_content"
+          android:text="@string/simb_euro4"
+          android:textAlignment="textEnd" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+      <TextView
+          android:id="@+id/textos_costos4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/top_grafo" />
+
+      <TextView
+          android:id="@+id/monto_topo"
+          android:layout_width="118dp"
+          android:layout_height="wrap_content"
+          android:textAlignment="textEnd" />
+
+      <TextView
+          android:id="@+id/euro_simbolo4"
+          android:layout_width="11sp"
+          android:layout_height="wrap_content"
+          android:text="@string/simb_euro2"
+          android:textAlignment="textEnd" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+      <TextView
+          android:id="@+id/textos_costos5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/impuestos_y_tasas" />
+
+      <TextView
+          android:id="@+id/ref_monto_imp"
+          android:layout_width="118dp"
+          android:layout_height="wrap_content"
+          android:textAlignment="textEnd" />
+
+      <TextView
+          android:id="@+id/euro_simbolo5"
+          android:layout_width="11sp"
+          android:layout_height="wrap_content"
+          android:text="@string/simb_euro"
+          android:textAlignment="textEnd" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+      <TextView
+          android:id="@+id/textos_costos6"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/escrituras_y_registro" />
+
+      <TextView
+          android:id="@+id/monto_escrituras"
+          android:layout_width="118dp"
+          android:layout_height="wrap_content"
+          android:textAlignment="textEnd" />
+
+      <TextView
+          android:id="@+id/euro_simbolo6"
+          android:layout_width="11sp"
+          android:layout_height="wrap_content"
+          android:text="@string/simb_euro3"
+          android:textAlignment="textEnd" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000">
+
+      <TextView
+          android:id="@+id/textView13"
+          android:layout_width="wrap_content"
+          android:layout_height="2dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <TextView
+          android:id="@+id/textos_costos7"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/total_iva_incluido"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/ref_monto_total"
+          android:layout_width="118dp"
+          android:layout_height="wrap_content"
+          android:textAlignment="textEnd"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/euro_simbolo7"
+          android:layout_width="11sp"
+          android:layout_height="wrap_content"
+          android:text="@string/simb_euro5"
+          android:textAlignment="textEnd" />
+    </TableRow>
+  </TableLayout>
+
+  <TextView
+      android:id="@+id/textView12"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:width="340dp"
+      android:text="@string/textos_costos_on"
+      android:textStyle="italic"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textos_costos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

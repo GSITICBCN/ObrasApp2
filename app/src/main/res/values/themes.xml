@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ObrasApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FF00FF</item>
+        <item name="colorPrimaryVariant">#80FF00FF</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#00FFFF</item>
+        <item name="colorSecondaryVariant">#8000FFFF</item>
+        <item name="colorOnSecondary">#000000</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">#000000</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.ObrasApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ObrasApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.ObrasApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PartidasObra">
+
+    <ImageView
+        android:id="@+id/menu17"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/menu"
+        android:onClick="toMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_48px" />
+
+    <TextView
+        android:id="@+id/po_texto"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/po_texto"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/po_titulo" />
+
+    <Button
+        android:id="@+id/btn_partida_nueva"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#FF00FF"
+        android:onClick="toGenerarPartida"
+        android:text="@string/btn_partida_nueva"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_volver_pres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btn_volver_pres"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF00FF"
+        android:onClick="toPresupuestoPartidas"
+        android:text="@string/btn_volver_pres"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml" />
+
+    <ImageView
+        android:id="@+id/logo15"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/txt_logo"
+        android:onClick="toMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/po_titulo"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/po_titulo"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FF00FF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/caja_lista_partidas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btn_partida_nueva"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/po_texto">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_lista_partidas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

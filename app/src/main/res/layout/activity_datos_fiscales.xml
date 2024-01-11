@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosFiscales">
+
+    <ImageView
+        android:id="@+id/menu5"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/menu"
+        android:onClick="toMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_48px" />
+
+    <Button
+        android:id="@+id/ingresar_logo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/btn_ingresar_logo"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/df_email"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/ingresar_datos"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF00FF"
+        android:text="@string/btn_ingresar_datos"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml" />
+
+    <ImageView
+        android:id="@+id/logo11"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/txt_logo"
+        android:onClick="toMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/titulo_datos_fiscales"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/titulo_datos_fiscales"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FF00FF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/texto_datos_fiscales"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/texto_datos_fiscales"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_datos_fiscales" />
+
+    <EditText
+        android:id="@+id/df_razon_social"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/df_razon_social"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_datos_fiscales" />
+
+    <EditText
+        android:id="@+id/df_codigo_postal"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/df_codigo_postal"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/df_razon_social" />
+
+    <EditText
+        android:id="@+id/df_email"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/df_email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/df_telefono" />
+
+    <EditText
+        android:id="@+id/df_direccion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/df_dirección"
+        android:inputType="textPostalAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/df_codigo_postal" />
+
+    <EditText
+        android:id="@+id/df_telefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/df_telefono"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/df_direccion" />
+
+    <EditText
+        android:id="@+id/df_localidad"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/df_localidad"
+        android:inputType="none"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/df_nif"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/df_web"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/df_web"
+        android:inputType="textWebEditText"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/df_telefono" />
+
+    <EditText
+        android:id="@+id/df_nif"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/df_nif"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_datos_fiscales" />
+</androidx.constraintlayout.widget.ConstraintLayout>

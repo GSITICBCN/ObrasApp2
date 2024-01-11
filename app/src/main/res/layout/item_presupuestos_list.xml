@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/presupuesto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <EditText
+        android:id="@+id/localidad_presupuesto"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/pres_localidad"
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/item_partida_nombre"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/pres_calle"
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/numero_presupuesto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/pres_dir_numero"
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="TextContrastCheck" />
+
+</LinearLayout>

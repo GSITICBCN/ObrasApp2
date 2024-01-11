@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PartidaDetalle">
+
+    <TextView
+        android:id="@+id/partida_unidades_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="@string/partida_unidades"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partida_precio_titulo" />
+
+    <TextView
+        android:id="@+id/partida_unidades_detalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/partida_unidades"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/partida_unidades_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/partida_precio_titulo" />
+
+    <Button
+        android:id="@+id/btn_agregar_a_pres"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#FF00FF"
+        android:text="@string/btn_agregar_a_pres"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_quitar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/btn_quitar"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#FF00FF"
+        android:text="@string/btn_quitar"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sin_agregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/btn_sin_agregar"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FF00FF"
+        android:onClick="toPartidas"
+        android:text="@string/btn_sin_agregar"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/partida_categoria_detalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/partida_categoria"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/partida_categoria_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/partida_id"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/menu20"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/menu"
+        android:onClick="toMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_48px"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/logo20"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/txt_logo"
+        android:onClick="toMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/titulopartida"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/partida_titulo"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FF00FF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/partida_partida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/partida_nombre"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulopartida"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/partida_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="60dp"
+        android:hint="@string/partida_id"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/partida_id_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/partida_partida"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/partida_id_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:text="@string/partida_id"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partida_partida" />
+
+    <TextView
+        android:id="@+id/partida_categoria_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="@string/partida_categoria"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partida_id_titulo" />
+
+    <TextView
+        android:id="@+id/partida_precio_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="@string/partida_precio"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partida_categoria_titulo" />
+
+    <TextView
+        android:id="@+id/partida_euros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="@string/partida_euros"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/partida_precio_detalle"
+        app:layout_constraintTop_toBottomOf="@+id/partida_categoria_detalle" />
+
+    <TextView
+        android:id="@+id/partida_cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/partida_cantidad"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partida_unidades_titulo" />
+
+    <TextView
+        android:id="@+id/partida_precio_detalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/partida_precio"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/partida_precio_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/partida_categoria_detalle"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/partida_detalle_cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/partida_cant"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/partida_cantidad"
+        app:layout_constraintTop_toBottomOf="@+id/partida_unidades_titulo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

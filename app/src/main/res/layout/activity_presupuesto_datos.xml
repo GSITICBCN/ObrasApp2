@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PresupuestoDatos">
+
+    <ImageView
+        android:id="@+id/menu13"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/menu"
+        android:onClick="toMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_48px" />
+
+    <ImageView
+        android:id="@+id/logo12"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/txt_logo"
+        android:onClick="toMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/titulo_presupuesto"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/titulo_presupuesto"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FF00FF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="369dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_presupuesto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/pres_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="end"
+                android:hint="@string/pres_fecha"
+                android:inputType="date"
+                android:minHeight="48dp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/pres_datos_cliente"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/pres_datos_cliente"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/pres_cliente"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/pres_cliente"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <LinearLayout
+                android:id="@+id/layaout_tel_mail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/pres_nif"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/pres_nif"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pres_ubicacion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/pres_ubicacion"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/pres_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/pres_txt_direccion"
+                android:inputType="textMultiLine"
+                android:autofillHints="" />
+
+            <TextView
+                android:id="@+id/pres_titulo_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:text="@string/pres_descripcion"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/pres_desc_mostrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/pres_txt_descripcion"
+                android:inputType="textMultiLine"
+                android:autofillHints="" />
+
+            <LinearLayout
+                android:id="@+id/layout_boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/pres_siguiente"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="#FE00FE"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/siguiente"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    app:cornerRadius="30dp"
+                    tools:ignore="TextContrastCheck,UsingOnClickInXml" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

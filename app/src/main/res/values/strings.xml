@@ -1,0 +1,244 @@
+<resources>
+    //Main
+    (Inicio)--------------------------------------------------------------------------------------------------------------------
+    <string name="app_name">Obras</string>
+    <string name="inicio1">Bienvenido a €BRAS,
+calculador de costos de obras de</string>
+    <string name="args">ARGS arquitectos.</string>
+    <string name="inicio2">Si eres profesional de la construcción podrás hacer presupuestos y facturas personalizados y con tus propias partidas y precios.
+
+        Si no lo eres, podrás obtener los costos aproximados rápidamente.</string>
+    <string name="toPersonalized">puedes hacerlo aquí.</string>
+
+    //Presupuesto
+    rápido----------------------------------------------------------------------------------------------------------------
+    <string name="rapido_titulo">Presupuesto rápido</string>
+    <string name="rapido_texto1">Podrás obtener una idea rápida de costos de obras.</string>
+    <string name="rapido_texto2">Recuerda que si quieres personalizar presupuestos y facturas, agregando partidas predefinidas o creadas por tí,</string>
+
+    //Obra
+    nueva------------------------------------------------------------------------------------------------------------------------
+    <string name="texto_new">Ingresando los datos que se piden a continuación, obtendrás un presupuesto aproximado del costo de construcción de una vivienda.</string>
+    <string name="obra_nueva">Obra Nueva</string>
+    <string name="superficie_en_m">Superficie en m²</string>
+    <string name="num_banos">Número de baños</string>
+
+    //Costos obra
+    nueva-----------------------------------------------------------------------------------------------------------------
+    <string name="textos_costos_on">Estos precios estimativos no incluyen actuaciones en el terreno.</string>
+    <string name="montoarq">montoArq</string>
+    <string name="montoimp">montoImp</string>
+    <string name="impuestos_y_tasas">Impuestos y tasas</string>
+    <string name="simb_euro">€</string>
+    <string name="simb_euro2">€</string>
+    <string name="simb_euro3">€</string>
+    <string name="simb_euro4">€</string>
+    <string name="montoing">montoIng</string>
+    <string name="escrituras_y_registro">Escrituras y registro</string>
+    <string name="montoescrituras">montoEscrituras</string>
+    <string name="costos_de_construcci_n">Costos de construcción</string>
+    <string name="obras">Obras</string>
+    <string name="montoobras">montoObras</string>
+    <string name="simb_euro5">€</string>
+    <string name="simb_euro6">€</string>
+    <string name="arquitecto">Arquitecto</string>
+    <string name="simb_euro7">€</string>
+    <string name="ingeniero_de_la_edificaci_n">Ingeniero de la edificación</string>
+    <string name="top_grafo">Topógrafo</string>
+    <string name="montotopo">montoTopo</string>
+    <string name="total_iva_incluido">Total IVA incluido</string>
+    <string name="montototal">montoTotal</string>
+
+    //Reforma---------------------------------------------------------------------------------------------------------------------------
+    <string name="texto_reforma">Ingresando los datos que se piden a continuación, obtendrás un presupuesto aproximado del costo de reformar una vivienda.
+
+Incluye sólo lo que quieres reformar, p. ej., si tienes dos baños pero quieres reformar solo uno, pon 1 baño. </string>
+    <string name="num_dormitorios">Número de dormitorios</string>
+    <string name="ref1">Cocina completa</string>
+    <string name="ref2">Cambiar la distribución</string>
+    <string name="ref3">Instalación de fontanería</string>
+    <string name="ref4">Instalación eléctrica</string>
+    <string name="ref5">Sistema de calefacción</string>
+    <string name="ref6">Sustituir puertas interiores</string>
+    <string name="ref7">Pintar paredes y techos</string>
+    <string name="txt_logo">Logotipo de la app</string>
+    <string name="txt_reforma">Reforma</string>
+
+    //Costos reforma----------------------------------------------
+    <string name="titulo_costos_reforma">Costos reforma</string>
+
+    //Personalizado-----------------------------------------------
+    <string name="titulo_personalizado">Personalizado</string>
+    <string name="texto_personalizado">Iniciando sesión, podrás personalizar tus presupuestos y facturas con partidas de obra existentes y creadas por tí.
+
+El registro es gratuito y solamente tendrás que ingresar un e-mail y una contraseña.</string>
+
+
+    //Presupuesto personalizado-----------------------------------------------
+    <string name="titulo_presupuesto_personalizado">Personalizado</string>
+    <string name="txt_presupuesto_personalizado">Podrás personalizar tus presupuestos y facturas, guardarlos e imprimirlos.</string>
+    <string name="txt_presupuesto_personalizado3">Agrega los datos fiscales y el logotipo de tu empresa para incluirlos en presupuestos y facturas.</string>
+    <string name="txt_presupuesto_personalizado2">Puedes hacerlo aquí.</string>
+
+    //Lista presupuestos-------------------------------------------------------
+    <string name="titulo_lp">Presupuestos</string>
+
+    //Iniciar sesión----------------------------------------------
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="txt_iniciar_sesion">Recuerda que para poder personalizar y guardar tus partidas de obra, presupuestos y/o facturas, deberás estar registrado.</string>
+    <string name="recordar_contrasenya">¿Has olvidado tu contraseña?</string>
+    <string name="no_registrado">¿No estás registrado?</string>
+    <string name="registrate">¡Regístrate!</string>
+
+    //Registrarse-------------------------------------------------
+    <string name="registrarse">Registro de usuario</string>
+    <string name="texto_registro">Para poder personalizar y guardar tus partidas de obra, presupuestos y/o facturas, deberás estar registrado.</string>
+    <string name="email">E-mail</string>
+    <string name="contrasenya">Contraseña</string>
+    <string name="contrasenya2">Confirmar contraseña</string>
+
+    //Datos fiscales----------------------------------------------
+    <string name="titulo_datos_fiscales">Datos fiscales</string>
+    <string name="texto_datos_fiscales">Ingresa datos fiscales y lgotipo de tu empresa.</string>
+    <string name="df_razon_social">Razón social</string>
+    <string name="df_nif">N.I.F.</string>
+    <string name="df_codigo_postal">C.P.</string>
+    <string name="df_localidad">Localidad</string>
+    <string name="df_dirección">Dirección</string>
+    <string name="df_telefono">Telefono/s</string>
+    <string name="df_email">E-mail</string>
+    <string name="df_web">Sitio web</string>
+
+    //Presupuesto-------------------------------------------------
+    <string name="titulo_presupuesto">Presupuesto</string>
+    <string name="pres_numero">Presupuesto nº </string>
+    <string name="pres_txt_nif">NIF: </string>
+    <string name="pres_txt_telefono">Teléfono: </string>
+    <string name="pres_txt_cliente">Cliente: </string>
+    <string name="pres_txt_datos_cliente">Cliente: </string>
+    <string name="pres_txt_ubicacion">Dirección de la obra: </string>
+    <string name="pres_txt_obras">Obras a realizar:</string>
+    <string name="pres_numero_ini">0</string>
+    <string name="pres_fecha">Fecha</string>
+    <string name="pres_cliente">Cliente</string>
+    <string name="pres_telefono">Teléfono/s</string>
+    <string name="pres_email">E-Mail</string>
+    <string name="pres_nif">NIF</string>
+    <string name="pres_datos">Datos de la obra:</string>
+    <string name="pres_cp">C.P.</string>
+    <string name="pres_localidad">Localidad</string>
+    <string name="pres_municipio">Municipio</string>
+    <string name="pres_provincia">Provincia</string>
+    <string name="pres_calle">Calle</string>
+    <string name="pres_dir_numero">Nº</string>
+    <string name="pres_bloque">Bloque</string>
+    <string name="pres_escalera">Esca.</string>
+    <string name="pres_planta">Planta</string>
+    <string name="pres_puerta">Puerta</string>
+    <string name="pres_descripcion">Descripción a mostrar:</string>
+    <string name="pres_txt_descripcion">Ejemplo:\nReforma de baños y cocina en vivienda unifamiliar.</string>
+    <string name="pres_datos_cliente">Datos del cliente:</string>
+    <string name="pres_ubicacion">Dirección de la obra:</string>
+    <string name="pres_direccion">Dirección</string>
+    <string name="pres_txt_direccion">Ejemplo:\nCalle Badajoz, 26.\n08005 Barcelona.</string>
+    <string name="pres_total">Total IVA incluído</string>
+
+    //Partidas de obra--------------------------------------------
+    <string name="po_titulo">Partidas de obra</string>
+    <string name="po_texto">Selecciona partidas o créalas y, con el botón +, agrégalas a tu presupuesto.</string>
+
+    //Generar partidas--------------------------------------------
+    <string name="partidas_generar">Nueva partida</string>
+    <string name="partidas_nombre">Nombre a mostrar en el listado</string>
+    <string name="partidas_categoria">Categoria</string>
+    <string name="partidas_unidades">Unidades</string>
+    <string name="partidas_descripción">Descripción de la partida.</string>
+    <string name="partidas_precio">Precio unitario</string>
+
+    //Modificar partidas------------------------------------------
+    <string name="partidas_modificar">Modificar partida</string>
+
+    //Facturas----------------------------------------------------
+    <string name="facturas_titulo">Facturas</string>
+    <string name="facturas_texto">Selecciona presupuestos del listado para hacer la factura.</string>
+
+    //Texto BOTONES-----------------------------------------------
+    <string name="obraNueva">Obra nueva</string>
+    <string name="reforma">Reforma</string>
+    <string name="inicio">Inicio</string>
+    <string name="guardar">Guardar</string>
+    <string name="calcular">Calcular</string>
+    <string name="volver">Volver</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="rapido">Rápido</string>
+    <string name="personalizado">Personalizado</string>
+    <string name="privacidad">Política de privacidad</string>
+    <string name="cookies">Política de cookies</string>
+    <string name="legal">Aviso legal</string>
+    <string name="contacto">Contacto</string>
+    <string name="inciar_sesion">Iniciar sesión</string>
+    <string name="btn_txt_registrarse">Registrarse</string>
+    <string name="btn_presupuesto">Hacer presupuesto</string>
+    <string name="btn_presupuestos">Presupuestos</string>
+    <string name="btn_partidas">Agregar partida</string>
+    <string name="btn_facturas">Factura</string>
+    <string name="btn_ingresar_datos">Guardar datos</string>
+    <string name="btn_ingresar_logo">Agregar logo</string>
+    <string name="btn_imprimir">Imprimir</string>
+    <string name="btn_partida_nueva">Crear partida</string>
+    <string name="btn_generar">Generar partida</string>
+    <string name="btn_modificar">Modificar partida</string>
+    <string name="btn_agregar">boton de agregar</string>
+    <string name="btn_agregar_a_pres">Agregar al presupuesto</string>
+    <string name="btn_quitar">Quitar del presupuesto</string>
+
+    <string name="btn_sin_agregar">Volver sin agregar</string>
+    <string name="btn_volver_pres">Volver al presupuesto</string>
+    <string name="volverInicio">Volver a inicio</string>
+
+    //LABELS---------------------------------------------------------------------------------------------------------------------------
+    <string name="label_acabados">Acabados</string>
+    <string name="label_tipología">Tipología</string>
+    <string name="label_icono_agregar">Agregar</string>
+    <string name="label_icono_editar">Editar</string>
+    <string name="label_spinner_alicatados">Alicatados</string>
+    <string name="label_spinner_tabiques">Tabiques</string>
+    <string name="label_spinner_titulos">Títulos partidas</string>
+    <string name="cerrar">Botón cerrar</string>
+    <string name="menu">Botón menú</string>
+
+    //Presupuesto tabla partidas-----------------------------------------
+    <string name="tabla_partidas">Partida</string>
+    <string name="tabla_cantidad">Cant.</string>
+    <string name="tabla_ud">Ud.</string>
+    <string name="tabla_precio_unitario">Unitario</string>
+    <string name="tabla_precio_total">Total</string>
+    <string name="direccion">Dirección</string>
+    <string name="direccion2">Dirección</string>
+
+    //PartidaDetalle-----------------------------------------
+    <string name="partida_titulo">Detalle partida</string>
+    <string name="partida_nombre">Partida: </string>
+    <string name="partida_id">Id: </string>
+    <string name="partida_categoria">Categoría: </string>
+    <string name="partida_precio">Precio unitario: </string>
+    <string name="partida_unidades">Unidades: </string>
+    <string name="partida_cantidad">Cantidad: </string>
+    <string name="partida_cant">Cantidad </string>
+    <string name="partida_euros">€</string>
+
+    //Políticas------------------------------------------------------------
+    <string name="titulo_privacidad">Política de privacidad</string>
+    <string name="texto_privacidad">\n\nCon el objeto de garantizar y proteger la privacidad y la confidencialidad de los datos de carácter personal y por tanto con el fin de proteger su intimidad, ARGS arquitectos ha redactado, en conformidad con la legislación vigente, la presente Política de Privacidad. \n\n
+Los datos enviados a ARGS arquitectos serán únicamente utilizados a tal efecto, quedando prohibido su uso o divulgación de manera externa en el entorno de ARGS arquitectos. \n\n
+La política de privacidad de ARGS arquitectos asegura, en todo caso, el ejercicio de los derechos de rectificación, cancelación e información en los términos que establece la legislación vigente. \n\n
+En conformidad con el que establece la Ley Orgánica 15/1999, de Protección de Datos de Carácter Personal (LOPD) y en la normativa de desarrollo, ARGS arquitectos garantiza la adopción de las medidas necesarias para asegurar el tratamiento confidencial de estos datos y lo informa de la posibilidad de ejercitar, conforme a esta normativa, los derechos de acceso, rectificación, cancelación y oposición, dirigiendo un escrito a info@args.net. \n\n
+Los términos recogidos en la presente Política de Privacidad y, en concreto, el deber de confidencialidad, son de obligado cumplimiento para todo el personal de ARGS arquitectos, así como para todos aquellos terceros que tengan acceso a los datos de carácter personal y a los equipos o sistemas de información de ARGS arquitectos. \n\n
+Responsable:  Andrea Raimondo.
+NIF: X4814503M
+Domicilio:  Badajoz 26, Barcelona - España.
+Correo electrónico:  info@args.cat
+Sitio Web:  https://args.net
+    </string>
+
+</resources>

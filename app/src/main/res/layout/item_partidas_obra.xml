@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/presupuesto_elegir"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_gravity="top"
+    android:gravity="top">
+
+    <ImageView
+        android:id="@+id/agregar_partida"
+        android:layout_width="48dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/label_icono_agregar"
+        app:srcCompat="@drawable/simbolo_mas" />
+
+    <TextView
+        android:id="@+id/item_partida_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_weight="0.7"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/partidas_nombre"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+</LinearLayout>
